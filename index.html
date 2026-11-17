@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CasaNova Immobiliare – Case in vendita e in affitto a Milano e dintorni (demo)</title>
+<meta name="description" content="CasaNova Immobiliare: immobili in vendita e in affitto a Milano e dintorni. Progetto dimostrativo per portfolio, annunci fittizi.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<script defer src="js/data.js"></script>
+<script defer src="js/favorites.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/search.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Vai al contenuto principale</a>
+<div class="demo-bar"><strong>Progetto dimostrativo per portfolio.</strong> Agenzia, annunci, prezzi e professionisti sono fittizi.</div>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="index.html" aria-label="CasaNova Immobiliare, torna alla home"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="1" y="1" width="38" height="38" rx="10" fill="#1C3856"/><path d="M9 20 20 11l11 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M12.5 18.5V29h15V18.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><rect x="18" y="22" width="4" height="7" fill="#B69962"/></svg><span class="logo__text" aria-hidden="true"><span class="logo__name">CasaNova</span><span class="logo__sub">Immobiliare</span></span></a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <div class="main-nav__panel" id="nav-panel">
+        <div class="main-nav__head">
+          <a class="logo" href="index.html" aria-label="CasaNova Immobiliare, torna alla home (menu)"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="1" y="1" width="38" height="38" rx="10" fill="#1C3856"/><path d="M9 20 20 11l11 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M12.5 18.5V29h15V18.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><rect x="18" y="22" width="4" height="7" fill="#B69962"/></svg><span class="logo__text" aria-hidden="true"><span class="logo__name">CasaNova</span><span class="logo__sub">Immobiliare</span></span></a>
+          <button type="button" class="icon-btn nav-close" aria-label="Chiudi menu"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
+        <div class="main-nav__scroll">
+          <ul class="main-nav__list">
+            <li><a class="main-nav__link" href="index.html" aria-current="page">Home</a></li><li class="has-sub"><div class="main-nav__row"><a class="main-nav__link" href="immobili.html">Immobili</a><button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-immobili"><span class="visually-hidden">Mostra le voci di Immobili</span><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div><ul class="submenu" id="sub-immobili" hidden><li><a href="immobili.html">Tutti gli immobili</a></li><li><a href="immobili.html?contratto=vendita">In vendita</a></li><li><a href="immobili.html?contratto=affitto">In affitto</a></li><li><a href="immobili.html?prestigio=1">Selezione Prestigio</a></li></ul></li><li><a class="main-nav__link" href="vendi.html">Vendi</a></li><li><a class="main-nav__link" href="affitta.html">Affitta</a></li><li class="has-sub"><div class="main-nav__row"><a class="main-nav__link" href="agenzia.html">Agenzia</a><button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-agenzia"><span class="visually-hidden">Mostra le voci di Agenzia</span><svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div><ul class="submenu" id="sub-agenzia" hidden><li><a href="agenzia.html">Chi siamo</a></li><li><a href="team.html">Team</a></li><li><a href="servizi.html">Servizi</a></li><li><a href="faq.html">FAQ</a></li></ul></li><li><a class="main-nav__link" href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__foot">
+          <a class="btn btn--primary btn--block" href="vendi.html#valutazione">Valuta il tuo immobile</a>
+          <p>Orari e recapiti dimostrativi nella pagina <a href="contatti.html">Contatti</a>.</p>
+        </div>
+      </div>
+    </nav>
+    <div class="site-header__actions">
+      <a class="icon-btn" href="preferiti.html" data-fav-link aria-label="Preferiti"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19.5 12.6 12 20l-7.5-7.4A4.9 4.9 0 0 1 12 6.3a4.9 4.9 0 0 1 7.5 6.3z"/></svg><span class="fav-count" data-fav-count data-count="0" aria-hidden="true">0</span></a>
+      <a class="btn btn--primary btn--sm header-cta" href="vendi.html#valutazione">Valuta il tuo immobile</a>
+      <button type="button" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Apri menu"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div class="nav-backdrop" hidden></div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media"><img src="assets/images/hero.svg" alt="Illustrazione di un soggiorno luminoso con grande finestra sulla città" width="1200" height="800" fetchpriority="high"></div>
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">Milano e dintorni</p>
+      <h1 id="hero-title">Trova lo spazio per il tuo prossimo capitolo.</h1>
+      <p class="lead">Case da vivere, progetti da realizzare. Scopri la selezione CasaNova a Milano e dintorni.</p>
+    </div>
+    <div class="search-card">
+      <h2>Cerca il tuo immobile</h2>
+      <form class="search-form" action="immobili.html" method="get" data-home-search role="search" aria-label="Ricerca immobili">
+        <fieldset>
+          <legend class="visually-hidden">Tipo di contratto</legend>
+          <div class="segmented">
+            <label><input type="radio" name="contratto" value="vendita" checked><span>Vendita</span></label>
+            <label><input type="radio" name="contratto" value="affitto"><span>Affitto</span></label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="hs-q">Comune o quartiere</label><input class="input" id="hs-q" name="q" list="zone-list" placeholder="Es. Isola, Monza…" autocomplete="off"><datalist id="zone-list"></datalist></div>
+        <div class="field"><label for="hs-tipo">Tipologia</label><select class="select" id="hs-tipo" name="tipologia">
+          <option value="">Tutte</option><option value="monolocale">Monolocale</option><option value="bilocale">Bilocale</option><option value="trilocale">Trilocale</option><option value="quadrilocale">Appartamento 4+ locali</option><option value="attico">Attico</option><option value="loft">Loft</option><option value="villa">Villa</option><option value="villetta">Villetta</option></select></div>
+        <div class="field"><label for="hs-budget">Budget massimo</label><select class="select" id="hs-budget" name="prezzoMax">
+          <option value="">Qualsiasi</option><option value="300000">fino a € 300.000</option><option value="500000">fino a € 500.000</option><option value="1000000">fino a € 1.000.000</option></select></div>
+        <button type="submit" class="btn btn--primary btn--block search-form__submit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-4-4"/></svg>Cerca immobili</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="h-featured">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-featured">Immobili in evidenza</h2><p>Una selezione di proposte scelte dal nostro team.</p></div><a class="link-arrow" href="immobili.html">Vedi tutti gli immobili<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="featured" data-limit="3"><noscript><div class="notice noscript-msg"><p>Per vedere gli annunci e usare filtri e preferiti abilita JavaScript nel browser.</p></div></noscript></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-new">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-new">Nuove proposte</h2><p>Gli ultimi annunci pubblicati.</p></div><a class="link-arrow" href="immobili.html?ordina=recenti">Tutte le novità<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="latest" data-limit="3"></div>
+  </div>
+</section>
+
+<section class="section section--warm" aria-labelledby="h-prestige">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-prestige">Selezione Prestigio</h2><p>Attici, ville e appartamenti di rappresentanza, presentati con discrezione.</p></div><a class="link-arrow" href="immobili.html?prestigio=1">Scopri la selezione<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="prestige" data-limit="3"></div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="h-split">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-split">Comprare o affittare?</h2><p>Due percorsi diversi, con informazioni chiare fin dall'inizio.</p></div></div>
+    <div class="split-tiles">
+      <a class="tile" href="immobili.html?contratto=vendita"><img src="assets/images/immobili/cn-102-1-living.svg" alt="" width="1200" height="800" loading="lazy"><h3>Immobili in vendita</h3><p>Dalla prima casa all'investimento: prezzi chiari e spese indicate a parte.</p><span class="link-arrow">Esplora le vendite<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile" href="immobili.html?contratto=affitto"><img src="assets/images/immobili/cn-110-1-living.svg" alt="" width="1200" height="800" loading="lazy"><h3>Immobili in affitto</h3><p>Canoni mensili e spese condominiali sempre separati, arredati e non.</p><span class="link-arrow">Esplora gli affitti<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="h-sell">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <p class="eyebrow">Per i proprietari</p>
+        <h2 id="h-sell">Vuoi vendere casa?</h2>
+        <p>Partiamo da un sopralluogo e da un confronto onesto sul valore dell'immobile. Nessuna stima automatica, nessuna promessa di tempi garantiti.</p>
+      </div>
+      <div class="btn-row"><a class="btn btn--light" href="vendi.html#valutazione">Richiedi una valutazione</a><a class="btn btn--outline-light" href="vendi.html">Come lavoriamo</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--blue" aria-labelledby="h-services">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-services">Servizi dell'agenzia</h2><p>Ti accompagniamo nelle diverse fasi, coordinandoci con i professionisti necessari.</p></div><a class="link-arrow" href="servizi.html">Tutti i servizi<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="services" data-limit="3"></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-steps">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-steps">Come funziona il percorso</h2><p>Quattro passaggi, con tempi e responsabilità chiari.</p></div></div>
+    <div data-render="steps"></div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="h-hoods">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-hoods">Quartieri da esplorare</h2><p>Alcune zone in cui seguiamo immobili in vendita e in affitto.</p></div><a class="link-arrow" href="agenzia.html#zone">Le zone che seguiamo<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="neighborhoods"></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-team">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-team">Il team</h2><p>Quattro consulenti, ognuno con le proprie zone di riferimento.</p></div><a class="link-arrow" href="team.html">Conosci il team<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="team" data-compact></div>
+  </div>
+</section>
+
+<section class="section section--warm" aria-labelledby="h-reviews">
+  <div class="container">
+    <div class="section-head"><div><h2 id="h-reviews">Cosa dicono di noi</h2><p>Recensioni dimostrative scritte per questo progetto: non provengono da clienti o piattaforme reali.</p></div></div>
+    <div data-render="reviews"></div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="h-faq">
+  <div class="container container--narrow">
+    <div class="section-head"><div><h2 id="h-faq">Domande frequenti</h2><p>Risposte generali, non consulenze personalizzate.</p></div><a class="link-arrow" href="faq.html">Tutte le FAQ<svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div data-render="faq" data-cat="acquisto,vendita,affitto,visite" data-limit="4"></div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="h-contact">
+  <div class="container">
+    <div class="cta-light">
+      <div><h2 id="h-contact">Parliamo del tuo progetto</h2><p>Raccontaci cosa cerchi o cosa vuoi fare con il tuo immobile. I moduli del sito sono dimostrativi.</p></div>
+      <div class="btn-row"><a class="btn btn--primary" href="contatti.html">Contattaci</a><a class="btn btn--secondary" href="immobili.html">Cerca immobili</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" aria-label="CasaNova Immobiliare, torna alla home"><svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="1" y="1" width="38" height="38" rx="10" fill="#1C3856"/><path d="M9 20 20 11l11 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M12.5 18.5V29h15V18.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><rect x="18" y="22" width="4" height="7" fill="#B69962"/></svg><span class="logo__text" aria-hidden="true"><span class="logo__name">CasaNova</span><span class="logo__sub">Immobiliare</span></span></a>
+        <p>Compravendita e locazione a Milano e dintorni: case da vivere, progetti da realizzare, con un percorso chiaro e senza promesse irrealistiche.</p>
+        <p class="footer-note">Progetto dimostrativo per portfolio. Agenzia, annunci, prezzi e professionisti sono fittizi. Nessun dato di iscrizione, partita IVA o licenza è associato a questo sito.</p>
+      </div>
+      <div>
+        <h2>Collegamenti utili</h2>
+        <ul class="footer-links">
+          <li><a href="immobili.html">Tutti gli immobili</a></li>
+          <li><a href="agenzia.html">Chi siamo</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="faq.html">Domande frequenti</a></li>
+          <li><a href="preferiti.html">I tuoi preferiti</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Cerca casa</h2>
+        <ul class="footer-links">
+          <li><a href="immobili.html?contratto=vendita">Immobili in vendita</a></li>
+          <li><a href="immobili.html?contratto=affitto">Immobili in affitto</a></li>
+          <li><a href="immobili.html?prestigio=1">Selezione Prestigio</a></li>
+          <li><a href="immobili.html?comune=Milano">Case a Milano</a></li>
+          <li><a href="immobili.html?comune=Monza">Case a Monza</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Per i proprietari</h2>
+        <ul class="footer-links">
+          <li><a href="vendi.html">Vendi casa</a></li>
+          <li><a href="vendi.html#valutazione">Richiedi una valutazione</a></li>
+          <li><a href="affitta.html#proprietari">Affitta il tuo immobile</a></li>
+          <li><a href="servizi.html">Servizi dell'agenzia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Orari</h2>
+        <dl class="footer-hours" data-hours>
+          <div><dt>Lunedì – Venerdì</dt><dd>9:30 – 13:00 · 14:30 – 19:00</dd></div>
+          <div><dt>Sabato</dt><dd>10:00 – 13:00, su appuntamento</dd></div>
+          <div><dt>Domenica</dt><dd>Chiuso</dd></div>
+        </dl>
+        <div class="footer-contact">
+          <span data-agency="address">Via dell'Esempio 12, Milano</span>
+          <small>Indirizzo di fantasia</small>
+          <span data-agency="email">info@casanova-immobiliare.example</span>
+          <span><span data-agency="phone">02 0000 0000</span> <small>(numero dimostrativo)</small></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> CasaNova Immobiliare · Progetto portfolio, nessuna attività reale</p>
+      <p><a href="privacy.html">Privacy della demo</a> · <a href="faq.html">FAQ</a> · <a href="contatti.html">Contatti</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
